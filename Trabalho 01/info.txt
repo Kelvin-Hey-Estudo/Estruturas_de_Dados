@@ -1,0 +1,59 @@
+Crie um programa que corrige as provas de uma turma de alunos com base em um
+gabarito. O programa receberá a quantidade de provas a serem corrigidas, as
+alternativas corretas (que podem ser ‘a’, ‘b’, ‘c’, ‘d’ ou ‘e’), e as alternativas
+marcadas por cada um (em ordem). O programa deverá mostrar o código que
+identifica o aluno e o conceito obtido por ele na referida prova. A prova possui
+sempre dez questões, sendo que cada uma vale 1 ponto.
+A entrada se dará no formato de um arquivo de texto, sendo a primeira linha a
+quantidade de provas, a segunda o gabarito, e as seguintes, as respostas de cada
+aluno. Os valores em cada linha são separados por um único espaço em branco.
+qtd_provas
+rc1 rc2 rc3 rc4 rc5 rc6 rc7 rc8 rc9 rc10
+num_matricula r1 r2 r3 r4 r5 r6 r7 r8 r9 r10
+Onde:
+qtd_provas: quantidade de provas que serão corrigidas
+rcx: resposta certa para a questão x;
+num_matricula: o número da matrícula do aluno;
+rx: resposta dada pelo aluno na questão x;
+A saída deverá ser exibida, da seguinte forma (1 aluno para cada linha):
+num_matricula_aluno conceito
+
+Exemplo de entrada:
+15
+
+A B C C A B B C A D
+9028304 B C C A B C C A B C
+1805660 A D A C A B A A B C
+9028305 A D A A B C A C A C
+1805661 A B C C A B A B C A
+9028306 C A B A B C A A B A
+1805661 A B C C A B D B C A
+9028307 C A B A A B C C C A
+1805661 C A D A B C C C A B
+9028308 A B C A B C C C A C
+1805661 C C A B C A D B A A
+9028309 A B C C A C B C A B
+1805661 B A C A C A C A D D
+9028310 B A B C B A A B C C
+1805662 C A C A D A B C C C
+9028311 B A A A B C C C A A
+
+Saída para a entrada acima:
+9028304 1
+1805660 4
+9028305 1
+1805661 6
+9028306 0
+1805661 6
+9028307 2
+1805661 0
+9028308 3
+1805661 0
+9028309 6
+1805661 1
+9028310 1
+1805662 2
+9028311 0
+
+O algoritmo deverá exibir exatamente e somente o que se pede, sem linhas,
+caracteres e espaços extras.
